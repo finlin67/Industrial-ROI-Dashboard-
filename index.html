@@ -1,0 +1,59 @@
+
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Industrial ROI Dashboard</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#308ce8",
+                        "background-dark": "#0f172a",
+                        "slate-panel": "#1e293b",
+                    },
+                    fontFamily: {
+                        "display": ["Inter", "sans-serif"]
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #020617;
+            margin: 0;
+            font-family: 'Inter', sans-serif;
+        }
+        .glint-overlay {
+            background: linear-gradient(
+                90deg, 
+                transparent 0%, 
+                rgba(251, 191, 36, 0.05) 30%, 
+                rgba(251, 191, 36, 0.6) 50%, 
+                rgba(251, 191, 36, 0.05) 70%, 
+                transparent 100%
+            );
+        }
+    </style>
+<script type="importmap">
+{
+  "imports": {
+    "framer-motion": "https://esm.sh/framer-motion@^12.29.2",
+    "lucide-react": "https://esm.sh/lucide-react@^0.563.0",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.4/",
+    "react/": "https://esm.sh/react@^19.2.4/",
+    "react": "https://esm.sh/react@^19.2.4"
+  }
+}
+</script>
+</head>
+<body class="w-full h-full">
+    <div id="root"></div>
+</body>
+</html>
